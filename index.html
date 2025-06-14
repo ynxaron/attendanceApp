@@ -1,0 +1,141 @@
+<!doctype html>
+<html ng-app="attendanceApp">
+    <head>
+        <title>Attendance Tracker</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/sidebar.css" />
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/profile_info.css" />
+        <link rel="stylesheet" href="styles/attendanceBar.css" />
+        <link rel="stylesheet" href="styles/daybox.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/profile-display-bar.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="profile-intro">
+            <div class="profile-intro-text">
+                <img class="djubo-logo" src="assets/djubo-logo.png" />
+                <p class="user-greeting">Hello, Satyam</p>
+            </div>
+            <div class="profile-intro-righttoolbar">
+                <p class="time">7:05AM</p>
+                <div class="profile-intro-profile">
+                    <img src="assets/profile_cropped.png" />
+                    <!--This is the beginning of profile div-->
+                    <div class="profile-display-root">
+                        <button class="profile-img-root">
+                            <img
+                                class="profile-img-img"
+                                src="assets/profile_cropped.png"
+                            />
+                        </button>
+                        <div class="profile-info-root">
+                            <div class="profile-info-top">
+                                <p>
+                                    <span
+                                        style="
+                                            font-family: &quot;Edu NSW ACT Cursive&quot;;
+                                            margin-right: 10px;
+                                        "
+                                        >Name:
+                                    </span>
+                                    <span style="font-weight: bold"
+                                        >Satyam Prakash</span
+                                    >
+                                </p>
+
+                                <p>
+                                    <span
+                                        style="
+                                            font-family: &quot;Edu NSW ACT Cursive&quot;;
+                                            margin-right: 10px;
+                                        "
+                                        >Job:
+                                    </span>
+                                    <span style="font-weight: bold"
+                                        >Backend Engineer</span
+                                    >
+                                </p>
+                            </div>
+                            <div class="profile-info-bottom">
+                                <button class="logout-button">
+                                    <img
+                                        class="logout-button-button"
+                                        src="assets/logout-button.svg"
+                                    />
+                                </button>
+                                <button class="refresh-button">
+                                    <img
+                                        class="refresh-button-button"
+                                        src="assets/refresh-icon.svg"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--This is the end of profile div-->
+                </div>
+            </div>
+        </div>
+        <div class="attendancebar" ng-controller="attendanceBar">
+            <div class="day-box" ng-repeat="day in allDaysInMonth">
+                <div class="day-stats">
+                    <div class="day-stats-date">{{day}}</div>
+                    <div class="day-stats-day">{{weeks[(day - 1) % 7]}}</div>
+                </div>
+                <div class="day-setting">
+                    <button class="calendar-button">
+                        <img
+                            class="calendar-icon"
+                            src="assets/calendar-icon.svg"
+                        />
+                    </button>
+                    <div class="day-stats-hours">
+                        <div class="day-stats-hours-time">6</div>
+                        <div class="day-stats-hours-hours">hr</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="user-info">
+                <div class="user-info-container">
+                    <div class="user-info-container-paragraph">
+                        <p>Satyam</p>
+                        <p style="color: lightgray; font-family: Arial">
+                            Developer
+                        </p>
+                    </div>
+                    <img
+                        class="profile-picture"
+                        src="assets/profile_cropped.png"
+                    />
+                </div>
+            </div>
+            <div class="website-info">
+                <div class="website-info-daysleft">
+                    <img src="assets/daysleft-2-icon.svg" />
+                    <div>3</div>
+                </div>
+                <div class="website-info-notifications">
+                    <img src="assets/notification-icon.svg" />
+                    <div>9</div>
+                </div>
+                <div class="website-info-setting">
+                    <img src="assets/setting-icon.svg" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

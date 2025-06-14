@@ -1,0 +1,59 @@
+.profile-intro {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 300;
+    background-color: rgb(242, 146, 17);
+    color: white;
+    height: 90px;
+}
+.profile-intro-text {
+    display: flex;
+}
+.djubo-logo {
+    height: 70px;
+    width: 180px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.user-greeting {
+    font-size: 40px;
+    margin-top: 17px;
+    margin-left: 46px;
+}
+.profile-intro-righttoolbar {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.time {
+    color: black;
+    margin-top: -5px;
+    margin-right: 50px;
+    font-size: 30px;
+}
+.profile-intro-profile {
+    margin-top: 5px;
+}
+.profile-intro-profile:hover .profile-display-root {
+    opacity: 1;
+    pointer-events: auto;
+}
+.profile-intro-profile img {
+    margin-top: -5px;
+    height: 30px;
+}
+.login-logout-button {
+    margin-top: -5px;
+    margin-left: 5px;
+    height: 40px;
+    background-color: rgb(242, 146, 17);
+    border: none;
+}
+.login-logout-menu {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 30px;
+}

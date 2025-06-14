@@ -1,0 +1,72 @@
+.day-profile-root {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 400px;
+    background-color: rgb(242, 146, 17);
+    border-radius: 10px;
+}
+.day-number {
+    display: flex;
+    margin-left: 10px;
+}
+.day-number-week {
+    margin-top: 94px;
+    margin-left: 5px;
+    color: black;
+}
+.day-number div {
+    margin-top: 50px;
+    font-size: 60px;
+}
+.day-button-root {
+    display: flex;
+    flex-direction: column;
+}
+.play-button-root {
+    margin-top: 15px;
+    display: flex;
+}
+.play-button-button {
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: rgb(242, 146, 17);
+}
+.play-button-info {
+    margin-top: -36px;
+    font-size: 30px;
+}
+.play-button-info div {
+}
+.play-button-button img {
+    height: 30px;
+}
+.pause-button-root {
+    margin-top: 15px;
+    display: flex;
+}
+.pause-button-button {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    background-color: rgb(242, 146, 17);
+}
+.pause-button-button img {
+    height: 30px;
+}
+.pause-button-info {
+    margin-top: -6px;
+    font-size: 31px;
+}
+.pause-button-info div {
+}
+/*This is where the angularjs specific css sheets would be defined*/
+.white-time-text {
+    color: white;
+}
+.black-time-text {
+    color: black;
+}
+/*The End of the angularjs specific designing*/

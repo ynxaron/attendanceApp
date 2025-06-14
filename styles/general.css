@@ -1,0 +1,12 @@
+html {
+    background-image: url("../assets/djubo-wallpaper.jpeg");
+    background-size: 1400px;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.profile-info-text {
+    font-weight: bold;
+}

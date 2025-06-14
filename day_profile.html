@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="dayBoxApp">
+    <head>
+        <title>Test Website of day profile</title>
+        <link rel="stylesheet" href="day_profile.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="day_profile.js"></script>
+    </head>
+    <body>
+        <div class="day-profile-root" ng-controller="dayBoxController">
+            <div class="day-number">
+                <div>16</div>
+                <p class="day-number-week">MON</p>
+            </div>
+            <div class="day-button-root">
+                <div class="play-button-root">
+                    <button class="play-button-button" ng-click="freeze_play()">
+                        <img src="assets/play-button-icon.svg" />
+                    </button>
+                    <div class="play-button-info">
+                        <p>
+                            <span
+                                ng-class="play_froze ? 'black-time-text' : 'white-time-text'"
+                                >{{play_time}}</span
+                            >
+                        </p>
+                    </div>
+                </div>
+                <div class="pause-button-root">
+                    <button
+                        class="pause-button-button"
+                        ng-click="freeze_pause()"
+                    >
+                        <img src="assets/pause-button-icon.svg" />
+                    </button>
+                    <div class="pause-button-info">
+                        <div>
+                            <span
+                                ng-class="pause_froze ? 'black-time-text' : 'white-time-text'"
+                                >{{pause_time}}</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
