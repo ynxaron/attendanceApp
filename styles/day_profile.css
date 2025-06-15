@@ -1,0 +1,94 @@
+.day-profile-root {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 200px;
+    background-color: rgb(242, 146, 17);
+    border-radius: 10px;
+    z-index: 500;
+    opacity: 0;
+}
+.day-number {
+    display: flex;
+    margin-left: 10px;
+}
+.day-number-week {
+    margin-top: 94px;
+    margin-left: 5px;
+    color: black;
+}
+.day-number div {
+    margin-top: 50px;
+    font-size: 60px;
+}
+.day-button-root {
+    display: flex;
+    flex-direction: column;
+}
+.play-button-root {
+    margin-top: 15px;
+    display: flex;
+}
+.play-button-button {
+    width: 70px;
+    height: 35px;
+    border: none;
+    background-color: rgb(242, 146, 17);
+}
+.play-button-info {
+    margin-top: -36px;
+    font-size: 30px;
+}
+.play-button-info div {
+}
+.play-button-button img {
+    height: 30px;
+}
+.pause-button-root {
+    margin-top: 15px;
+    display: flex;
+}
+.pause-button-button {
+    width: 70px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    background-color: rgb(242, 146, 17);
+}
+.pause-button-button img {
+    height: 30px;
+}
+.pause-button-info {
+    margin-top: -6px;
+    font-size: 31px;
+}
+.pause-button-info div {
+}
+/*This is where the angularjs specific css sheets would be defined*/
+.white-time-text {
+    color: white;
+}
+.black-time-text {
+    color: black;
+}
+/*The End of the angularjs specific designing*/
+
+.popUpMsg {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(242, 146, 17);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #222;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+    z-index: 999;
+}
+
+.fade-out {
+    opacity: 0;
+}

@@ -6,6 +6,7 @@
     height: 50px;
     border-color: rgb(242, 146, 17);
     color: black;
+    position: relative;
 }
 .day-stats {
     display: flex;
@@ -70,4 +71,8 @@
 .day-box:hover .calendar-button {
     background-color: rgb(242, 146, 17);
     color: white;
+}
+
+.day-box:hover .day-profile-root {
+    opacity: 1;
 }

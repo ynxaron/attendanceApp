@@ -2,7 +2,7 @@
 <html ng-app="dayBoxApp">
     <head>
         <title>Test Website of day profile</title>
-        <link rel="stylesheet" href="day_profile.css" />
+        <link rel="stylesheet" href="styles/day_profile.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
         <script src="day_profile.js"></script>
     </head>
@@ -14,6 +14,13 @@
             </div>
             <div class="day-button-root">
                 <div class="play-button-root">
+                    <div
+                        class="popUpMsg"
+                        ng-show="popUpVisible"
+                        ng-class="{'fade-out':!popUpVisible}"
+                    >
+                        {{popUpMsg}}
+                    </div>
                     <button class="play-button-button" ng-click="freeze_play()">
                         <img src="assets/play-button-icon.svg" />
                     </button>
